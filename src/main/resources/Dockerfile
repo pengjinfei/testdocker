@@ -11,4 +11,4 @@ WORKDIR /usr/local/tomcat
 RUN rm -rf webapps/* && \
     mkdir -p webapps/ROOT && \
     unzip testdocker.war -d webapps/ROOT
-RUN tar zxf /usr/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz /usr/java/
+RUN tar zxf /usr/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz -C /usr/java/
