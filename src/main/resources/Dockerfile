@@ -2,7 +2,7 @@
 FROM tomcat:8-jre8
 MAINTAINER pengjinfei <312055826@163.com>
 #http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz
-RUN apt-get purge openjdk*
+RUN apt-get purge y popenjdk*
 ADD http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz /usr/java/
 ENV JAVA_HOME /usr/java/jdk1.8.0_91
 ENV PATH $PATH:$JAVA_HOME/bin
