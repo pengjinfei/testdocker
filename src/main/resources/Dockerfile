@@ -5,7 +5,7 @@ MAINTAINER pengjinfei <312055826@163.com>
 RUN apt-get purge -y openjdk*
 #ADD http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz /usr/java/
 RUN wget -P /usr/java/ --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
-    http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz
+    http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz >/dev/null
 RUN tar -zxf /usr/java/jdk-8u91-linux-x64.tar.gz -C /usr/java/
 ENV JAVA_HOME /usr/java/jdk1.8.0_91
 ENV PATH $PATH:$JAVA_HOME/bin
