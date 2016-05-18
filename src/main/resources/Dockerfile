@@ -9,6 +9,7 @@ MAINTAINER pengjinfei <312055826@163.com>
 #RUN tar -zxf /usr/java/jdk-8u91-linux-x64.tar.gz -C /usr/java/
 #ENV JAVA_HOME /usr/java/jdk1.8.0_91
 #ENV PATH $PATH:$JAVA_HOME/bin
+#docker images|grep none|awk '{print $3}'|xargs docker rmi
 COPY testdocker.war /usr/local/tomcat/
 WORKDIR /usr/local/tomcat
 RUN rm -rf webapps/* && \
