@@ -9,6 +9,6 @@
 <body>
 <h2>Hello World!</h2>
 <h2><%=JSONObject.toJSONString(user)%></h2>
-<img alt="加载中..." title="图片加载中..." src="<%=request.getContextPath()%>/test">
+<%--<img alt="加载中..." title="图片加载中..." src="<%=request.getContextPath()%>/test">--%>
 </body>
 </html>

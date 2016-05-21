@@ -12,6 +12,6 @@ MAINTAINER pengjinfei <312055826@163.com>
 #docker images|grep none|awk '{print $3}'|xargs docker rmi
 COPY testdocker.war /usr/local/tomcat/
 WORKDIR /usr/local/tomcat
-RUN rm -rf webapps/* && \
-    mkdir -p webapps/ROOT && \
+RUN rm -rf /usr/local/tomcat/webapps/* && \
+    mkdir -p /usr/local/tomcat/webapps/ROOT && \
     unzip testdocker.war -d webapps/ROOT
